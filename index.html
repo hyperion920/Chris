@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/43b89cdc63.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/name.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Christopher Acosta</span><br></h1>
+            <p>Junior Studying Mechanical Engineering</span><br></p>
+        </div>
+    </div>
+</div>
+<!-----------------about---------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/TOM06430.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hello! I'm Christopher Acosta, a junior at Columbia University 
+                    studying Mechanical Engineering with a passion for aerospace engineering. 
+                    I'm driven to contribute to the advancement of space exploration and
+                    innovation, focusing on rocket design and space megastructures like 
+                    Dyson Spheres. Currently, I'm involved in the Columbia Space Initiative,
+                    designing a 20-foot hybrid rocket for launch at Spaceport America. I'm also 
+                    part of the Columbia FSAE team, creating a fully electric F1 racing car. 
+                    As a superuser at the Makerspace @ Columbia University, I teach students 
+                    how to safely use and maintain machines. Excited to meet you and explore new 
+                    learning experiences together!
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+<!--skills-->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>CAD/CAM software:</span><br>Solidworks, AutoCad, Fusion360, HSMWorks</li>
+                        <li><span>Tools/Machining:</span><br>Manual/CNC lathe, CNC Mill, 3D/SLS Printing, Laser Cutting, Soldering</li>
+                        <li><span>Programming Languages:</span><br>Python, C/C++, MatLab</li>
+                        <li><span>Languages:</span><br>English, Spanish, Japanese</li>
+                        <li><span>Other:</span><br>MS Office, Ultimaker Cura, LTspice, Git</li>
+                    </ul>
+                </div>
+<!--experience-->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Roseburg Forest Products (May 2023 - Aug. 2023)</span><br>Mechanical Engineering Intern</li>
+                        <li>Proficiently designed detailed drawings for essential components of a state-of-the-art sawmill, including log cradles, ramps, 
+                            and conduit placements, considering optimal functionality and safety standards. Effectively collaborated with contractors 
+                            to bring the drawings to life, meticulously evaluating multiple quotes to identify the most suitable and cost-effective options.
+                            </li>
+                        <li><span>Columbia Makerspace  (Feb. 2023 - Present)</span><br>Superuser</li>
+                        <li>Responsible for instructing new students and Columbia members how to safely operate the machines 
+                            (3D printer, Laser cutter, Soldering irons, and CNC Lathes and Mills) as well as aiding them with their own personal projects.
+                            Perform general maintenance of machines and equipment and ensure that the space is clean at all times.
+                            </li>
+                        <li><span>Hyflex Video  (Mar. 2022 - Aug. 2022)</span><br>Assistant</li>
+                        <li>Provided technical support for remote learning, including managing Zoom sessions and recording lectures for professors.
+                            Conducted quality control checks on recording equipment to ensure optimal functionality and sanitation.
+                            </li>
+                        <li><span>Morris Park Urgent Care Center  (Aug. 2020 - Sep. 2021)</span><br>Receptionist</li>
+                        <li>Provided administrative support for a healthcare facility including scheduling, registration, and document management.
+                            Assisted patients, physicians, nurses and other healthcare staff with various requests and inquiries
+                            </li>
+                    </ul>
+                </div>
+<!--eduction-->
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Columbia University, School of Engineering and Applied Sciences</span><br>Bachelor of Science in Mechanical Engineering</li>
+                        <li>Expected by May 2025</li>
+                        <li>GPA: 3.56/4.00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------services-------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1> 
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-pen-ruler"></i>
+                <h2>Design</h2>
+                <p>Proficient in SolidWorks, Fusion360, and AutoCad. Able to design and create 
+                    any part, drawing, and assembly needed. Also, experienced in using CAM softwares such as 
+                    HSMWorks to create the needed G code for CNC machining to manufacture said parts.
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h2>Machining</h2>
+                <p>Experienced in machining using the manual/CNC lathe and CNC mill. Can machine 
+                    to relatively small tolerances. Have machined mostly aluminum, but also stainless
+                    steel, brass, graphite, and phenolic.
+                </p>
+                </div>
+        </div>
+    </div>
+</div>
+<!----------------portfolio------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="images/IMG_3001.jpg">
+                <div class="layer">
+                    <h3>Rocket Engine</h3>
+                    <p>A 800 lb thrust hybrid rocket for launch at Spaceport America</p>
+                    <a href="C:\Users\acost\OneDrive\Documents\Portfolio\portfolio rocket.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/IMG_2595 (2).jpg">
+                <div class="layer">
+                    <h3>Quadrupedal Robot</h3>
+                    <p>A four-legged robot able to walk in all four directions, wave, and dance!</p>
+                    <a href="C:\Users\acost\OneDrive\Documents\Portfolio\portfolio robot.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/hydraulic.png">
+                <div class="layer">
+                    <h3>Hydraulic Press</h3>
+                    <p>Miniature Hydraulic Press made of metal with a maximum operating pressure of 150 psi</p>
+                    <a href="C:\Users\acost\OneDrive\Documents\Portfolio\portfolio hydraulic press.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/IMG_2020.jpg">
+                <div class="layer">
+                    <h3>Self-Balancing Cube</h3>
+                    <p>A cube that to balance on its edges and a corner!</p>
+                    <a href="C:\Users\acost\OneDrive\Documents\Portfolio\portfolio self-balancing cube.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!---<a href="#" class="btn">See More</a>---->
+    </div>
+</div>
+<!------------------------contact---------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> cba2130@columbia.edu</p>
+                <p><i class="fa-solid fa-square-phone"></i> (347) 986-5989</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/christopher-acosta-95b626224/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Final Resume .docx.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Chris</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxCjAyzwtOF63EIW2UxoiSGx3zhWmqCMNlDgF7bD5ybj1s_aKck_Ez_lRwM8XmzDelJ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
